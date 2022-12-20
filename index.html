@@ -5,21 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carson Fitzgeorge's Online Portfolio</title>
+    <!-- linking external fonts -->
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <div class="header-nav">
+        <ul>
+            <li><a href="#">Home</a>
+            <li><a href="#">About</a> 
+            <li><a href="#">Portfolio</a>
+            <li><a href="#">Contact</a>   
+        </ul>
+    </div>
     <main>
-        <div class="header-nav">
-            <a href="#" class="active">Home</a>
-            <a href="#" class="active">About Me</a>
-            <a href="#" class="active">My Works</a>
-            <a href="#" class="active">Contact Me</a>
-        </div>
-
         <div id="header">
             <h1>Welcome to Carson Fitzgeorge's Online Portfolio</h1>
-            <p>Hello, future employer. I'm Carson, and welcome to my online portfolio.</p><br>
-            <p>Keep on scrolling to learn about me, see all the stuff I've done, (including a commemorative demo reel showcasing them all in video form) and a contact form so you can send me cool things, like letters of acceptance, or funny cat pictures!</p>
+            <img src="images/welcomepic.png" alt="welcomepic">
+            <p>Hello, future employer. I'm Carson, and welcome to my online portfolio. Keep on scrolling to learn about me, see all the stuff I've done, (including a commemorative demo reel showcasing them all in video form) and a contact form so you can send me cool things, like employment offers, or sometimes funny cat pictures!</p>
         </div>
 
         <!-- End Home -->
@@ -29,22 +35,16 @@
         <div class="about">
             <h1>About Me</h1>
             <ul>
-                <li>
-                    My Name
-                </li>
-                <p>replace with live text</p>
-                <li>
-                    Age
-                </li>
-                <p>replace with live text</p>
-                <li>
-                    Interests/Hobbies
-                </li>
-                <p>replace with live text</p>
-                <li>
-                    How long I've been in Interactive Media Design
-                </li>
-                <p>replace with live text</p>
+                <li>My Name</li>
+                    <p>replace with live text</p>
+                <li>Age</li>
+                    <p>replace with live text</p>
+                <li>My Interests/Hobbies</li>
+                    <p>replace with live text</p>
+                <li>My Goals</li>
+                    <p>replace with live text</p>
+                <li>How long I've been in College</li>
+                    <p>replace with live text</p>
             </ul>
         </div>
 
@@ -52,42 +52,36 @@
 
         <!-- Start Portfolio-->
 
-        <div class="portfolio"></div>
-            <h1>My Works</h1>
-            <p>Below, you'll find a comprehensive list of some of the stuff I've worked on in my time at Fanshawe. Enjoy!</p>
-            <img src="#" alt="Style Frames">
-            <img src="#" alt="Morphing Commercial">
-            <img src="#" alt="Mendelbalm Project">
-            <img src="#" alt="Sportsnet Intro">
-
+        <div class="folio">
+            <h1>My Portfolio</h1>
+            <p>Below, you'll find a list of some of the stuff I've worked on in my time at Fanshawe. Enjoy!</p>
+        </div>
+        <div class="previews">
+            <img src="images/folioPH.png" alt="Style Frames">
+            <img src="images/folioPH.png" alt="Morphing Commercial">
+            <img src="images/folioPH.png" alt="Mendelbalm Project">
+            <img src="images/folioPH.png" alt="Sportsnet Intro">
+            <img src="images/folioPH.png" alt="Project Guardian">
+            <img src="images/folioPH.png" alt="Demo Reel">
+        </div>
+            
             <!-- End Portfolio-->
 
             <!-- Start Contact Form-->
 
-            <div class="contact"></div>
+        <div class="contact">
             <h1>Contact Me!</h1>
             <p>Need to send me an employment offer, or perhaps some funny cat pictures? You've come to the right place. Use this contact form designed by me!</p>
-                 <form action="mail.php" method="POST" id="mail-form">
-                    <label for="firstname">First Name</label>
-                    <input ref="fname" type="text" id="firstname" name="firstname" required="required">
-        
-                    <label for="lastname">Last Name</label>
-                    <input ref="lname" type="text" id="lastname" name="lastname" required>
-        
-                    <label for="firstname">Email</label>
-                    <input ref="email" type="email" id="email" name="email" required>
-        
-                    <label for="message">Your Message</label>
-                    <textarea ref="message" name="message" id="message" cols="30" rows="10"></textarea>
-        
-                    <label for="phone">Your Phone # <i>(optional)</i></label>
-                    <input ref="phone" type="tel" value="tel" name="phone">
+
+        </div>
 
         <div class="footer-nav">
-            <a href="#" class="active">Home</a>
-            <a href="#" class="active">About Me</a>
-            <a href="#" class="active">My Works</a>
-            <a href="#" class="active">Contact Me</a>
+            <ul>
+                <li><a href="#">Home</a>
+                <li><a href="#">About</a> 
+                <li><a href="#">Portfolio</a>
+                <li><a href="#">Contact</a>   
+            </ul>
         </div>
     </main>
     

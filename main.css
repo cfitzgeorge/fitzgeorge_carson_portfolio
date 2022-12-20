@@ -1,0 +1,193 @@
+* {
+    background-color:#8fadf3;
+}
+
+/* Header */
+
+#header h1 {
+    color:#221111;
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'Edu TAS Beginner';
+    }
+
+#header p {
+    color:#221111;
+    font-size: 1.8em;
+    font-family:'Akshar';
+    letter-spacing: .05ch;
+    word-spacing: .25ch;
+    text-align: center;
+    margin: 2.5em;
+}
+
+/* Header Nav Bar */
+
+.header-nav * {
+    background-color: #3d5691;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: -10px;
+    padding: 0;
+}
+
+
+.header-nav a:hover {
+    background-color: #5c75b1;
+}
+
+.header-nav a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color:#221111;
+    font-family:'Akshar';
+    line-height: 3.65em;
+    padding: 28px;
+}
+
+/* About */
+
+.about h1 {
+    color:#221111;
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'Edu TAS Beginner';
+}
+
+.about li {
+    font-family: 'Edu TAS Beginner';
+    list-style: none;
+    font-size: 2em;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.about p {
+    font-family: 'Akshar';
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+/* Portfolio */
+
+.folio h1 {
+    color:#221111;
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'Edu TAS Beginner';
+}
+
+.folio p {
+    color:#221111;
+    font-size: 1.8em;
+    font-family:'Akshar';
+    letter-spacing: .05ch;
+    word-spacing: .25ch;
+    text-align: center;
+    margin: 2.5em;
+}
+
+.previews {
+    text-align: center;
+}
+
+.previews img {
+    width: 35%;
+    padding: 30px;
+    display: inline-block;
+    max-width: 700px;
+}
+
+/* Contact */
+
+.contact h1 {
+    color:#221111;
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'Edu TAS Beginner';
+}
+
+.contact p {
+    color:#221111;
+    font-size: 1.8em;
+    font-family:'Akshar';
+    letter-spacing: .05ch;
+    word-spacing: .25ch;
+    text-align: center;
+    margin: 2.5em;
+}
+
+label { 
+    display: block;
+    margin: 1.5em 0 0.3em;
+
+    padding-left: 0.4em;
+
+}
+
+input[type=text], input[type=email], input[type=tel], textarea {
+    padding: 0.6em;
+    color: #333;
+    border-radius: 4px;
+    width: 250px;
+}
+
+input[type=submit] {
+    display: block;
+    margin-top: 2em;
+    padding: 0.75rem 3.3rem 0.75rem 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #78abeb;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bolder;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 60px;
+    font-size: 1.5em;
+}
+
+
+textarea { resize: none; display: block; }
+
+/* Footer Nav Bar */
+
+.footer-nav * {
+    background-color: #3d5691;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: -10px;
+    padding: 1px;
+}
+
+
+.footer-nav a:hover {
+    background-color: #5c75b1;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color:#221111;
+    font-family:'Akshar';
+    line-height: 3.65em;
+    padding: 28px;
+}

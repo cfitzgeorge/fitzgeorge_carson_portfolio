@@ -15,74 +15,111 @@
 <body>
     <div class="header-nav">
         <ul>
-            <li><a href="#">Home</a>
-            <li><a href="#">About</a> 
-            <li><a href="#">Portfolio</a>
-            <li><a href="#">Contact</a>   
+            <li><a href="#header">Home</a>
+            <li><a href="#about">About</a> 
+            <li><a href="#folio">Portfolio</a>
+            <li><a href="#contact">Contact</a>   
         </ul>
     </div>
     <main>
-        <div class="header">
+        <div id="header">
+            <img src="images/portfolio-banner-img.jpg" alt="welcomepic">
             <h1>Welcome to Carson Fitzgeorge's Online Portfolio</h1>
-            <img src="images/welcomepic.png" alt="welcomepic">
+            <br>
             <p>Hello, future employer. I'm Carson, and welcome to my online portfolio. Keep on scrolling to learn about me, see all the stuff I've done, (including a commemorative demo reel showcasing them all in video form) and a contact form so you can send me cool things, like employment offers, or sometimes funny cat pictures!</p>
+            <br><br>
         </div>
+
+        <img id="pagedeco" src="images/pagebreakdeco.png" alt="page decoration">
 
         <!-- End Home -->
 
         <!-- Start About -->
 
-        <div class="about">
+        <div id="about">
             <h1>About Me</h1>
             <ul>
                 <li>My Name</li>
                     <p>Carson Fitzgeorge</p>
                 <li>Age</li>
-                    <p>19</p>
+                    <p>I'm 19 years old, and I turn 20 next October.</p>
                 <li>My Interests/Hobbies</li>
-                    <p>replace with live text</p>
+                    <p>My interests and hobbies consist of creating Photoshop edits, gaming, and going for long walks in the wee hours of the night.</p>
                 <li>My Goals</li>
-                    <p>replace with live text</p>
+                    <p>I hope to eventually become a voice actor, and I will use the skills I've learned in college to remodel this website into a voice demo site.</p>
                 <li>How long I've been in College</li>
-                    <p>replace with live text</p>
+                    <p>I've been in the Interactive Media Design program at Fanshawe College for a little more than a year.</p>
             </ul>
         </div>
+
+        <img id="pagedeco" src="images/pagebreakdeco.png" alt="page decoration">
 
         <!-- End About -->
 
         <!-- Start Portfolio-->
 
-        <div class="folio">
+        <div id="folio">
             <h1>My Portfolio</h1>
             <p>Below, you'll find a list of some of the stuff I've worked on in my time at Fanshawe. Enjoy!</p>
         </div>
-        <div class="previews">
-            <img src="images/folioPH.png" alt="Style Frames">
-            <img src="images/folioPH.png" alt="Morphing Commercial">
-            <img src="images/folioPH.png" alt="Mendelbalm Project">
-            <img src="images/folioPH.png" alt="Sportsnet Intro">
-            <img src="images/folioPH.png" alt="Project Guardian">
-            <img src="images/folioPH.png" alt="Demo Reel">
+        <div class="foliocontainer">
+            <div class="previews">
+                <img src="images/morphingcommercial.jpg" alt="Morphing Commercial">
+                <img src="images/mendelbalm.jpg" alt="Mendelbalm Project">
+                <img src="images/sportsnetintro.jpg" alt="Sportsnet Intro">
+                <img src="images/projectguardian.jpg" alt="Project Guardian">
+                <br>
+            </div>
         </div>
+
+        <iframe width="width" height="height" src="includes/demo_reel.mp4"></iframe>
+        <br>
+
+        <img id="pagedeco" src="images/pagebreakdeco.png" alt="page decoration">
             
             <!-- End Portfolio-->
 
             <!-- Start Contact Form-->
 
-        <div class="contact">
+        <div id="contact">
             <h1>Contact Me!</h1>
             <p>Need to send me an employment offer, or perhaps some funny cat pictures? You've come to the right place. Use this contact form designed by me!</p>
         </div>
 
+        <form action="mail.php" method="POST" id="mail-form">
+            <label for="firstname">First Name</label>
+            <input ref="fname" type="text" id="firstname" name="firstname" required="required">
+
+            <label for="lastname">Last Name</label>
+            <input ref="lname" type="text" id="lastname" name="lastname" required>
+
+            <label for="email">Email</label>
+            <input ref="email" type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea ref="message" name="message" id="message"></textarea>
+
+            <label for="phone">Your Phone # <i>(optional)</i></label>
+            <input ref="phone" type="tel" value="tel" name="phone">
+            
+            <div class="wrapper">
+                <input @click.prevent="processMail" type="submit" class="submit" value="Go!">
+                <i class="fas fa-paper-plane"></i>
+            </div>                              
+        </form>
+        <br><br>
+
         <div class="footer-nav">
             <ul>
-                <li><a href="#">Home</a>
-                <li><a href="#">About</a> 
-                <li><a href="#">Portfolio</a>
-                <li><a href="#">Contact</a>   
+                <li><a href="#header">Home</a>
+                <li><a href="#about">About</a> 
+                <li><a href="#folio">Portfolio</a>
+                <li><a href="#contact">Contact</a>   
             </ul>
         </div>
     </main>
     
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main.js" type="module" defer></script>
 </body>
 </html>
